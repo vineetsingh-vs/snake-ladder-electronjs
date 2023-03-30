@@ -1,0 +1,12 @@
+{
+    "name": "ENEB-453-snake-ladder",
+    "version": "1.0.0",
+    "main": "main.js",
+    "devDependencies": {
+        "@electron/remote": "^2.0.9",
+        "electron": "^23.2.1"
+    },
+    "scripts": {
+        "start": "npx electronmon ."
+    }
+}
