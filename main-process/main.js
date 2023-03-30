@@ -17,13 +17,13 @@ const createWindow = ()=>{
             nodeIntegration: true,
             contextIsolation: false,
             enableRemoteModule: true,
-            preload: path.join(__dirname, 'preload.js')
+            preload: path.join(__dirname, './main-process/preload.js')
         }
     });
     if(isDev) {
         // win.webContents.openDevTools();
     }
-    win.loadFile('index.html');
+    win.loadFile('./render-process/index.html');
     
 
     win.on('closed', () =>{

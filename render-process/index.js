@@ -20,5 +20,5 @@ newWindowBtn.addEventListener('click', function(){
     });
     win.webContents.openDevTools();
     // win.loadFile(path.join(path.join(__dirname, 'index.html')));
-    win.loadFile('home.html');
+    win.loadFile('./home.html');
 });
